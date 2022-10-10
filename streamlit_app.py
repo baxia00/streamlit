@@ -29,7 +29,7 @@ if link:
 else:
      st.text("杨柏山大峡谷横拍视频，加载失败---")
 
-# comp.iframe(link,height=512, width=750)
+comp.iframe(link,height=512, width=750)
 comp.html("""<video controls="" autoplay="" name="media"><source src="{}" type="video/mp4"></video>""".format(link),height=600)
 
 
