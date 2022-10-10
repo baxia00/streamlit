@@ -22,6 +22,10 @@ with st.sidebar:
         """)
 
 #右边
-st.text("杨柏山大峡谷横拍视频")
+
 link = get_rel_url("https://v.qq.com/x/page/g3116qm34rs.html")
+if link:
+    st.text("杨柏山大峡谷横拍视频，加载成功")
+else:
+     st.text("杨柏山大峡谷横拍视频，加载失败---")
 components.iframe(link,height=512, width=750)
