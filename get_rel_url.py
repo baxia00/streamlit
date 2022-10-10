@@ -2,7 +2,7 @@ import requests
 # from fake_useragent import UserAgent
 # headers = {'User-Agent':UserAgent().random}
 
-headers = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:21.0) Gecko/20130331 Firefox/21.0"
+headers = {"User-Agent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:21.0) Gecko/20130331 Firefox/21.0"}
 base_url = "https://www.sznest.net/_backup/html/get_the_real_address_of_Tencent_video_ajax.php"
 
 
@@ -26,6 +26,6 @@ def get_rel_url(url):
 if __name__ == '__main__':
 
     url = "https://v.qq.com/x/page/g3116qm34rs.html"
-    # print(get_rel_url(url))
-    print(UserAgent().random)
+    print(get_rel_url(url))
+    # print(UserAgent().random)
     
