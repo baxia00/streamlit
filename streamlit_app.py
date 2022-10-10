@@ -1,5 +1,5 @@
 import streamlit as st
-import streamlit.components.v1 as components
+import streamlit.components.v1 as comp
 from get_rel_url import *
 
 
@@ -28,4 +28,14 @@ if link:
     st.text("杨柏山大峡谷横拍视频，加载成功")
 else:
      st.text("杨柏山大峡谷横拍视频，加载失败---")
-components.iframe(link,height=512, width=750)
+
+# comp.iframe(link,height=512, width=750)
+comp.html("""<video controls="" autoplay="" name="media"><source src="{}" type="video/mp4"></video>""".format(link),height=600)
+
+
+if __name__ == '__main__':
+
+    link = "https://v.qq.com/x/page/g3116qm34rs.html"
+    # c = comp.iframe(link,height=512, width=750)
+    # print(help(comp()))
+   
